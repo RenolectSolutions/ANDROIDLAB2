@@ -9,14 +9,16 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_text"/>
 
     <Spinner
         android:id="@+id/spinnerCountType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText"
-        android:layout_marginTop="97dp" />
+        android:layout_marginTop="97dp"
+        android:entries="@array/count_types"/>
 
     <Button
         android:id="@+id/buttonCount"
@@ -29,13 +31,16 @@
         android:layout_marginStart="168dp"
         android:layout_marginTop="136dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="379dp" />
+        android:layout_marginBottom="379dp"
+        />
 
     <TextView
-    android:id="@+id/textViewResult"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text=""
-    android:layout_below="@id/buttonCount"
-    android:layout_marginTop="16dp"/>
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_below="@id/buttonCount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-138dp"
+        android:layout_marginEnd="3dp"
+        android:text="" />
 </RelativeLayout>
